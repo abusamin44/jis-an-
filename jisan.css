@@ -131,6 +131,7 @@
     margin-top: 10px;
     font-size: 15px;
     line-height: 1.8;
+
   }
   .about {
     margin-top: 70px;
@@ -246,17 +247,18 @@
 }
 
 .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    flex-wrap: wrap;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .contact-text {
     flex: 1 1 45%;
+    padding-bottom: 70px;
 }
 
 .contact-text h2 {
