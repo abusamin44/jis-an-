@@ -27,7 +27,7 @@
     z-index: 1000;
   }
   .logo {
-    
+
     font-size: 26px;
     font-weight: bold;
     color: rgb(66, 25, 214);
@@ -379,7 +379,11 @@
         }
         nav ul {
         flex-direction: column;
-        font-size: 14px;
-        gap: 15px;
+        align-items: center;
+        font-size: 10px;
+        gap: 10px;
+        }
+        nav .logo {
+        font-size: 8px;
         }
     }  
