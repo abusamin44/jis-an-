@@ -13,16 +13,20 @@
 
 </head>
 <body>
-    <!-- nav bar -->
+    <!-- nav bar -->  
     
    <nav id="nave">
     <h1 class=" logo">Freelancer JisAn</h1>
+    <span class="menu-btn" id="menuToggle">☰ Menu</span>
+      
          <ul>
                 <li><a href="#nave">Home</a></li>
-                <li><a href="#about1">About Me</a></li>
+                <li><a href="#about1">About</a></li>
                 <li><a href="#service1">Service</a></li>
                 <li><a href="#reaview1">Review</a></li>
                 <li><a href="#contact1">Contact</a></li>
+         </ul>
+
     </nav>
     <!-- home details -->
 
@@ -227,7 +231,7 @@
     <div class="nave">
          <ul>
                 <li><a href="#nave">Home</a></li>
-                <li><a href="#about1">About Me</a></li>
+                <li><a href="#about1">About</a></li>
                 <li><a href="#service1">Service</a></li>
                 <li><a href="#reaview1">Review</a></li>
                 <li><a href="#contact1">Contact</a></li>
@@ -237,6 +241,30 @@
 
 </div>
 
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nave');
+    const navLinks = nav.querySelectorAll('ul li a');
+  
+    // Toggle menu on menu button click
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  
+    // Hide menu after clicking any link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('show');
+      });
+    });
+  
+    // Optional: Close menu if clicked outside
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+        nav.classList.remove('show');
+      }
+    });
+  </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" integrity="sha512-4x1+2v3J7Z5gk8Q9z5Xj1m4f3q1+2v3J7Z5gk8Q9z5Xj1m4f3q1+2v3J7Z5gk8Q9z5Xj1m4f3q1+2v3J7Z5gk8Q9" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
