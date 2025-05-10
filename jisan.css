@@ -52,6 +52,11 @@ nav ul li a {
 nav ul li a:hover {
   color: rgb(66, 25, 214);
 }
+
+.menu-btn {
+  display: none; }
+
+
   /* Home Section */
   .home {
     padding: 100px 10%;
